@@ -6,7 +6,7 @@ public class Ex{
         int ascii =ch;
             System.out.println(ascii); 
 //         upper or lower case
-        if(ascii==65){
+       if(ascii>=65 && ascii<=90){
             System.out.println("Upper Case"); 
         }
         else{
