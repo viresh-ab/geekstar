@@ -7,5 +7,10 @@ class AreaofRectangle {
 	     }
 	     System.out.println();
 	 }
-	}
+     }
 }
+// * * * * *
+// * * * *
+// * * *
+// * *
+// *
