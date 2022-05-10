@@ -12,6 +12,9 @@ public class Main {
              char b = (char)j;
             System.out.print(b+" ");
         }
+        char a='s';
+        int b=(int)a;
+        System.out.print(b);
 
     }
 }
