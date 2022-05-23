@@ -12,5 +12,7 @@ public class Main {
         int[] arr ={5,1,2,7,4,3};
         int ele=3;
         System.out.println(search(arr,ele));
+//         int ind=search(arr,ele);
+//         System.out.println(ind);
     }
 }
