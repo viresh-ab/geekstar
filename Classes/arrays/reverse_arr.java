@@ -1,15 +1,18 @@
-public class PrimeNumber1ToN {
-    static void reverseArray(int[] arr){
-        for(int i=arr.length-1; i>=0; i--){
-          System.out.print(arr[i]+" ") ;
-          
-        }
-        
+public class Main {
+    static int[] reverse(int[] a){
+        int n= a.length-1;
+        int[] r=new int[n+1];
+    for(int i=0; i<a.length; i++){
+        int j =n-i;
+        r[i]=a[j];
     }
-    
-    public static void main(String[] args) {
-        int[] arr= {2,3,4,5,67};
-       reverseArray(arr);
-      
+        return r;
+    }
+    public static void main(String[] args){
+     int[] a = {2,4,6,8,0,9,7,5,3,1};
+        int[] revArr = reverse(a);
+        for(int i=0;i<revArr.length;i++){
+            System.out.print(revArr[i]+" ");
+        }
     }
 }
