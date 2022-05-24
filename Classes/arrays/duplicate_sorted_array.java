@@ -1,7 +1,7 @@
 // Check the sorted have duplicate or not?
 public class Main {
     static boolean checkDuplicates(int[] a){
-        for(int i=0; i<a.length;i++){
+        for(int i=0; i<a.length-1;i++){
             if(a[i]==a[i+1])
                 return true;
         }
