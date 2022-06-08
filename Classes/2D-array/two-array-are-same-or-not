@@ -1,0 +1,37 @@
+// check weather elements of matrices same or not
+public class Main {
+  static boolean check(int[][] a, int[][] b){
+    int n = a.length;
+    int m = a[0].length;
+    if(a.length != b.length || a[0].length!=b[0].length){
+      return false;
+    }
+    for(int j=0; j<n;j++){
+      for(int i=0; i<m;i++){
+         if(a[j][i]!=b[j][i]){
+           return false;
+         }
+      }
+  }
+          return true;
+  }
+    public static void main(String[] args) {
+      Scanner scan = new Scanner(System.in);
+      int m= scan.nextInt();
+      int n= scan.nextInt();
+      int ele=5;
+      int[][] arr1= new int[m][n];
+      int[][] arr2= new int[m][n];
+      for(int j=0; j<m;j++){
+      for(int i=0; i<n;i++){
+       arr1[j][i]=scan.nextInt();
+      }
+      }
+      for(int j=0; j<m;j++){
+      for(int i=0; i<n;i++){
+       arr2[j][i]=scan.nextInt();
+      }
+      }
+      System.out.println(check(arr1,arr2));
+    }
+}
