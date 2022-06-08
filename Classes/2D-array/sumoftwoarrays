@@ -1,0 +1,38 @@
+// sum of two 2d arrays
+public class Main {
+  static void sumoftwoarrays(int[][] a, int[][] b){
+    int n=a.length;
+    int m=a[0].length;
+    int[][] sum=new int[n][m];
+    
+    for(int i=0;i<n;i++){
+      int c_sum=0;
+      for(int j=0; j<m; j++){
+        sum[i][j]=a[i][j]+b[i][j]; 
+      }
+      }
+    for(int j=0; j<m;j++){
+      for(int i=0; i<n;i++){
+       System.out.print(sum[i][j]+" ");
+      }
+      }
+    }
+    public static void main(String[] args) {
+      Scanner scan = new Scanner(System.in);
+      int m= scan.nextInt();
+      int n= scan.nextInt();
+      int[][] arr1= new int[m][n];
+      int[][] arr2= new int[m][n];
+      for(int j=0; j<m;j++){
+      for(int i=0; i<n;i++){
+       arr1[j][i]=scan.nextInt();
+      }
+      }
+      for(int j=0; j<m;j++){
+      for(int i=0; i<n;i++){
+       arr2[j][i]=scan.nextInt();
+      }
+      }
+      sumoftwoarrays(arr1,arr2);
+    }
+}
