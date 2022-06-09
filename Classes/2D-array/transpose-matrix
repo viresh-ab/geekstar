@@ -1,0 +1,45 @@
+transpose of matrix
+
+import java.util.*;
+class main{
+    static void sumequaldioganal(int[][] a){
+        int n = a.length;
+        int m = a[0].length;
+      int[][] trans = new int[n][m];
+       for(int i=0; i<n; i++){
+            for(int j=0; j<m; j++){
+              trans[i][j]=a[j][i];
+            }
+        }
+        for(int i=0; i<n; i++){
+            for(int j=0; j<m; j++){
+               System.out.print(trans[i][j]+" ");
+            }
+           System.out.println();
+        }
+    }
+	public static void main (String[] args) {
+	Scanner scan = new Scanner(System.in);
+	 int n = scan.nextInt();
+	 int m = scan.nextInt();
+	 int[][] arr=new int[n][m];
+	 for(int i=0; i<n; i++){
+	     for(int j=0;j<m; j++){
+	         arr[i][j]=scan.nextInt();
+	     }
+	  }
+	  sumequaldioganal(arr);
+    }
+}
+
+input:
+3
+3
+1 2 3 
+4 3 2 
+4 8 6
+
+output:
+1 4 4 
+2 3 8 
+3 2 6 
