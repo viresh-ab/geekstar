@@ -1,0 +1,45 @@
+// check matrix is identity matrix or not
+import java.util.*;
+public class Main {
+  static boolean identity(int[][] a){
+    int n=a.length;
+    int m=a[0].length;
+    
+    for(int i=0;i<n;i++){
+        for(int j=0;j<m;j++){
+          if(i==j){
+            if(a[i][j]!=1){
+            return false;
+            }
+          }
+          else{
+            if(a[i][j]!=0){
+            return false;
+          }
+        }
+      }
+    }
+    return true;
+  }
+  public static void main(String[] args) {
+      Scanner scan = new Scanner(System.in);
+      int m= scan.nextInt();
+      int n= scan.nextInt();
+      int[][] arr1= new int[m][n];
+      for(int j=0; j<m;j++){
+      for(int i=0; i<n;i++){
+       arr1[j][i]=scan.nextInt();
+      }
+      }
+      System.out.println(identity(arr1));
+    }
+}
+
+input:
+3
+3
+1 0 0 
+0 1 0  
+0 0 1
+
+output: true;
