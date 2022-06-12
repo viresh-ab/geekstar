@@ -2,7 +2,7 @@ transpose of matrix
 
 import java.util.*;
 class main{
-    static void sumequaldioganal(int[][] a){
+    static void transpose(int[][] a){
         int n = a.length;
         int m = a[0].length;
       int[][] trans = new int[n][m];
@@ -28,7 +28,7 @@ class main{
 	         arr[i][j]=scan.nextInt();
 	     }
 	  }
-	  sumequaldioganal(arr);
+	  transpose(arr);
     }
 }
 
