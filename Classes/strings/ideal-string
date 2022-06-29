@@ -1,0 +1,24 @@
+// Check the string is ideal or not
+import java.util.*;
+public class Main {
+  static boolean ideal(String s){
+    int n= s.length();
+      if(n>=0 && Character.isLowerCase(s.charAt(0))){
+   return false;
+  }
+      for(int i=1; i<n;i++){
+  if(Character.isUpperCase(s.charAt(i))){
+   return false;
+  }
+        
+  }
+    return true;
+  }
+    public static void main(String[] args){
+      int count=0;
+  Scanner sc = new Scanner(System.in);
+  String u = sc.nextLine();
+
+      System.out.print(ideal(u));
+}
+}
