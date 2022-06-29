@@ -10,11 +10,15 @@ public class Main {
     System.out.print(u.charAt(i));
   }
   }
-      System.out.println();
-    for(int i=0; i<u.length();i++){
+  System.out.println();
+  for(int i=0; i<u.length();i++){
   if(i%2==1){
     System.out.print(u.charAt(i));
   }
-  }  
+  }
+  System.out.println();
+  for(int i=0; i<u.length();i=i+2){
+    System.out.print(u.charAt(i));
+  }
 }
 }
