@@ -1,0 +1,15 @@
+// count vowels in array
+import java.util.*;
+public class Main {
+    public static void main(String[] args){
+      int count=0;
+  Scanner sc = new Scanner(System.in);
+  String u = sc.nextLine();
+  for(int i=u.length()-1; i>=0;i--){
+  if(u.charAt(i)=='a' || u.charAt(i)=='e' || u.charAt(i)=='i' || u.charAt(i)=='o' || u.charAt(i)=='u' || u.charAt(i)=='A' || u.charAt(i)=='E' || u.charAt(i)=='I' || u.charAt(i)=='O' || u.charAt(i)=='U'  ){
+    count++;
+  }
+  }
+      System.out.println(count);
+}
+}
