@@ -1,0 +1,11 @@
+// sorting string using Arrays.sort();
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+       String s = scan.nextLine();
+      char[] ch = s.toCharArray();
+      Arrays.sort(ch);
+      System.out.println(new String(ch));
+    }
+}
