@@ -15,6 +15,7 @@ public class Main {
   static String sortString(String a){
     char[] ch = a.toCharArray();
     bubblesort(ch);
+//     String s= new String(ch);
     return new String(ch);
   }
     public static void main(String[] args) {
