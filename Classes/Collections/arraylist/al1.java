@@ -4,6 +4,7 @@ public class Main {
         ArrayList a = new ArrayList<>();
         a.add("viresh");
         a.add("varsha");
+//      a.add(index,"element"); 
         a.add(2,"abhay");
         System.out.println(a);
 //         method 2
