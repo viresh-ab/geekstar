@@ -11,8 +11,8 @@ public class Main {
 //         to remove the elements
         a.remove("varsha");
 //         to print line by line
-        for(Object o: a){
-            System.out.println(o);
+        for(Object obj: a){
+            System.out.println(obj);
         }
     }
 }
