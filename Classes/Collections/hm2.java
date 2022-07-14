@@ -44,4 +44,33 @@ public class MyClass {
         }
     }
 }
+// ///////////////////////////////////////////////////////////////
+import java.util.*;
+public class MyClass {
+    public static void main(String args[]) {
+        Scanner scan = new Scanner(System.in);
+        int maxfreq = Integer.MIN_VALUE;
+        ArrayList<Integer> a = new ArrayList<>();
+        int n = scan.nextInt();
+        for(int i=0; i<n; i++){
+            a.add(scan.nextInt());
+        }
+        HashMap<Integer,Integer> h =new HashMap<>();
+        for(int i=0;i<n;i++){
+            if(h.containsKey(a.get(i))){
+                h.put(a.get(i),h.get(a.get(i))+1);
+            }
+            else{
+             h.put(a.get(i),1);
+            }
+        }
+        int maxele=-1;
+        for (Map.Entry<Integer, Integer> e : h.entrySet()){
+            if(e.getValue()>maxfreq){
+                maxfreq=e.getValue();
+                maxele=e.getKey();
+            }
+        System.out.println(maxele + " -> " + maxfreq);
+    }
+}
 
